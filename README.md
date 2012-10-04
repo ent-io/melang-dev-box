@@ -72,6 +72,7 @@ so we are ready to go to edit in the host, and test in the virtual machine.
 
     vagrant@melang-dev-box:~$ cd /vagrant/melang
     vagrant@melang-dev-box:~$ bundle install
+    vagrant@melang-dev-box:~$ cp config/database.yml.example config/database.yml
     vagrant@melang-dev-box:~$ bundle exec rake db:migrate
     vagrant@melang-dev-box:~$ bundle exec rake db:test:prepare
     vagrant@melang-dev-box:~$ bundle exec guard
