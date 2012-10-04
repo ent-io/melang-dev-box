@@ -12,7 +12,6 @@ This project automates the setup of a development environment for [Melang](https
 ## How To Build The Virtual Machine
 
 * Download and install the VirtualBox binary [for your environment](https://www.virtualbox.org/wiki/Downloads).
-* `bundle install` to get Vagrant using [Bundler](http://gembundler.com/).
 
 Building the virtual machine is this easy:
 
