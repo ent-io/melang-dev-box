@@ -12,7 +12,6 @@ This project automates the setup of a development environment for [Melang](https
 ## How To Build The Virtual Machine
 
 * Download and install the VirtualBox binary [for your environment](https://www.virtualbox.org/wiki/Downloads).
-* `bundle install` to get Vagrant using [Bundler](http://gembundler.com/).
 
 Building the virtual machine is this easy:
 
@@ -73,6 +72,7 @@ so we are ready to go to edit in the host, and test in the virtual machine.
 
     vagrant@melang-dev-box:~$ cd /vagrant/melang
     vagrant@melang-dev-box:~$ bundle install
+    vagrant@melang-dev-box:~$ cp config/database.yml.example config/database.yml
     vagrant@melang-dev-box:~$ bundle exec rake db:migrate
     vagrant@melang-dev-box:~$ bundle exec rake db:test:prepare
     vagrant@melang-dev-box:~$ bundle exec guard
